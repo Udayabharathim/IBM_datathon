@@ -10,7 +10,7 @@ Our solution, AVAL.AI, addresses the challenges associated with PCOS by employin
 
 ## MACHINE LEARNING MODEL TO PREDICT PCOS USING RANDOM FOREST
 
-###IMPORING THE NECESSARY LIBRARIES
+### IMPORING THE NECESSARY LIBRARIES
 ```
 import pandas as pd
 import random
@@ -19,9 +19,10 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score, classification_report
-from tabulate import tabulate```
+from tabulate import tabulate
+```
 
-###Load the datasets
+### Load the datasets
 
 ```data_path = 'CLEAN- PCOS SURVEY SPREADSHEET.csv'
 df = pd.read_csv(data_path)
@@ -30,10 +31,11 @@ recipes_path = 'recipes.csv - Sheet1.csv'
 recipes_df = pd.read_csv(recipes_path, encoding='latin-1')
 
 exercise_path = 'exercise.csv - sheet1.csv'
-exercise_df = pd.read_csv(exercise_path, encoding='latin-1')```
+exercise_df = pd.read_csv(exercise_path, encoding='latin-1')
+```
 
 
-###Fill missing values AND TRAIN THE TEST SPLIT
+### Fill missing values AND TRAIN THE TEST SPLIT
 ```
 imputer = SimpleImputer(strategy='mean')
 df_imputed = pd.DataFrame(imputer.fit_transform(df), columns=df.columns)
@@ -49,7 +51,7 @@ scaler = StandardScaler()
 X_train_scaled = scaler.fit_transform(X_train)
 X_test_scaled = scaler.transform(X_test)
 ```
-###TRAIN THE MODEL
+### TRAIN THE MODEL
 ```# Train the model
 model = RandomForestClassifier(n_estimators=100, random_state=42)
 model.fit(X_train_scaled, y_train)
@@ -61,7 +63,7 @@ print(f"Model Accuracy: {accuracy}")
 print(classification_report(y_test, y_pred))
 ```
 
-###GENERATE THE RECOMMENDATIONS
+### GENERATE THE RECOMMENDATIONS
 ```
 def generate_diet_and_exercise_plan():
     days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
@@ -92,7 +94,7 @@ def generate_diet_and_exercise_plan():
     print(tabulate(exercise_table_data, headers="firstrow", tablefmt="grid"))
     print("\nPlease follow the meal and exercise plans to manage PCOS effectively.")```
 
-###TAKING USER CHOICE
+### TAKING USER CHOICE
 ```
 def pcos_chatbot():
     print("Welcome to the PCOS detection chatbot!")
@@ -164,5 +166,5 @@ def pcos_chatbot():
 pcos_chatbot()
 ```
 
-
+# OUPUT
 
