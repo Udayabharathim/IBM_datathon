@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet and Exercise Plan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Your Personalized Plans</h1>
+    <h2>Diet Plan</h2>
+    <pre>{{ diet_plan }}</pre>
+    
+    <h2>Exercise Plan</h2>
+    <pre>{{ exercise_plan }}</pre>
+
+    <a href="/">Back to Home</a>
+</body>
+</html>
