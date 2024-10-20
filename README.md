@@ -161,10 +161,7 @@ def pcos_chatbot():
 
         else:
             print("\nInvalid input. Please enter a valid command (e.g., 'predict PCOS', 'get diet and exercise recommendations', or 'quit').")
-
-
 pcos_chatbot()
-```
 
 # OUPUT
 
