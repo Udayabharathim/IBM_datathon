@@ -1,3 +1,4 @@
+# AVAL.AI
 # THEME - MACHINE LEARNING MODEL TO PREDICT PCOS
 ## PROBLEM STATEMENT
 Polycystic Ovary Syndrome (PCOS) The syndrome is named after cysts which form on the ovaries of some women with this condition, that affects a significant percentage of women of reproductive age,  leading to complications such as infertility, metabolic syndrome, and an increased risk of developing diabetes and cardiovascular diseases. Early detection of PCOS can greatly improve treatment outcomes and quality of life.
