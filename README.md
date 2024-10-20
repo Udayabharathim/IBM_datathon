@@ -1,5 +1,4 @@
-# THEME
-MACHINE LEARNING MODEL TO PREDICT PCOS
+# THEME - MACHINE LEARNING MODEL TO PREDICT PCOS
 ## PROBLEM STATEMENT
 Polycystic Ovary Syndrome (PCOS) The syndrome is named after cysts which form on the ovaries of some women with this condition, that affects a significant percentage of women of reproductive age,  leading to complications such as infertility, metabolic syndrome, and an increased risk of developing diabetes and cardiovascular diseases. Early detection of PCOS can greatly improve treatment outcomes and quality of life.
 
@@ -164,4 +163,14 @@ def pcos_chatbot():
 pcos_chatbot()
 
 # OUPUT
+![Screenshot 2024-10-20 073039](https://github.com/user-attachments/assets/5995a3aa-366a-47e2-900d-6b40ba49b1ca)
+
+![Screenshot 2024-10-20 073039](https://github.com/user-attachments/assets/0ba9f97e-27b2-489c-80e6-3166866b0cf9)
+
+
+![Screenshot 2024-10-20 073157](https://github.com/user-attachments/assets/e689deaa-deb7-4870-bbf9-c3878cbdae8b)
+
+![Screenshot 2024-10-20 073209](https://github.com/user-attachments/assets/f7e76832-27b0-4aa7-9dd0-2f6674c31181)
+
+![Screenshot 2024-10-20 073221](https://github.com/user-attachments/assets/b3be42a5-0d5f-4443-9a54-425ca375e6d5)
 
